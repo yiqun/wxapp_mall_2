@@ -125,7 +125,7 @@ Page({
           setTimeout(function () {
             wx.hideLoading();
             wx.navigateBack();
-          }, 2000)
+          }, 1000)
         }
       })
     }

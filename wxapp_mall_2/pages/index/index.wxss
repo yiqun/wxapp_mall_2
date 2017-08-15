@@ -1,0 +1,42 @@
+/*菜单*/
+.menu-wrap { padding: 20rpx 0; background: #fff; margin-bottom: 20rpx; } 
+.menu-wrap .menu-item { width: 25%; display: inline-block; padding: 0 20rpx; box-sizing: border-box; } 
+.menu-wrap image { width: 100rpx; height: 100rpx; } 
+.menu-wrap .menu-tx { margin: 10rpx 0; } 
+
+/*顶部搜索组*/
+.search-wrap { background: #f35150; } 
+.search-box { display: flex; width: 550rpx; height: 64rpx; justify-content: center; align-items: center; background: #fff; border-radius: 40rpx; padding: 0 20rpx; margin: 20rpx auto; box-sizing: border-box; } 
+.search-box .iconfont { font-size: 32rpx; padding-top: 2rpx; } 
+.search-box .txt { padding-left: 10rpx; } 
+
+/*首页标题组*/
+.m-header { padding: 20rpx; background: #fff; border-bottom: 2rpx solid #f6f6f6; } 
+.m-header .iconfont { padding-right: 12rpx; vertical-align: -4rpx; } 
+.m-header .icon-jingxuanshichang { color: #fea512; } 
+.m-header .icon-nvzhuangneiyi { color: #f35150; } 
+.m-header .title { color: #333; font-size: 32rpx; } 
+
+/*首页推荐产品*/
+.recommend-wrap { background: #fff; margin-bottom:20rpx; } 
+.recommend-main { white-space: nowrap; padding: 20rpx 10rpx; height: 407rpx; box-sizing: border-box; } 
+.recommend-main .item { display: inline-block; width: 28%; height: 367rpx; padding: 0 10rpx; } 
+.recommend-main image { width: 100%; height: 304rpx; vertical-align: top; border-radius: 10rpx; } 
+
+/*首页竖栏分类*/
+.hot-wrap { margin-bottom: 20rpx; } 
+.common-classify { padding: 0 20rpx; background: #fff; } 
+.c-item { padding: 20rpx 0; border-bottom:2rpx solid #f6f6f6; } 
+.con { display: flex; justify-content: space-between; } 
+.img-wrap { width: 200rpx; height: 200rpx; overflow: hidden; margin-right: 24rpx; border-radius:10rpx; } 
+.img-wrap image { width: 100%; vertical-align: top; } 
+.intro-wrap { flex: 1; display: flex; flex-direction: column; justify-content: space-between; } 
+.intro-wrap .title { font-size: 32rpx; color: #000; height: 96rpx; } 
+.detail-wrap { display: flex; justify-content: space-between; align-items: flex-end; } 
+.detail-wrap .price { padding-right: 20rpx; color: #f35150; font-size:32rpx; } 
+.detail-wrap .num { color: #999; font-size: 24rpx; } 
+.detail-wrap .buy-icon { width: 70rpx; height: 70rpx; line-height: 70rpx; border-radius: 50%; background: #f35150; color: #fff; text-align: center; } 
+
+/*自定义*/
+.particular-wrap { padding: 10rpx; } 
+.particular-wrap image { border-radius: 10rpx; } 

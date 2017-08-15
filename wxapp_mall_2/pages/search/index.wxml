@@ -1,0 +1,98 @@
+<view class="container">
+    <view class="sr-group">
+        <view class="sr-main">
+            <view class="con">
+                <view class="iconfont icon-sousuo"></view>
+                <input class="txt" type="text" placeholder="搜索" bindinput="bindCon"></input>
+            </view>
+            <view class="sr-btn" data-key="{{keyWord}}" bindtap="search">搜索</view>
+        </view>
+    </view>
+    <view class="product-main">
+        <view class="item">
+            <navigator url="/pages/product_view/index">
+                <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+                <view class="pr-intro">
+                    <view class="name lineText2">烧烤</view>
+                    <view class="con">
+                        <view class="price">￥
+                            <text class="num">22.00</text>
+                        </view>
+                        <view class="volume">销量：99</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="item">
+            <navigator url="/pages/product_view/index">
+                <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p2.jpg"></image>
+                <view class="pr-intro">
+                    <view class="name lineText2">水果</view>
+                    <view class="con">
+                        <view class="price">￥
+                            <text class="num">22.00</text>
+                        </view>
+                        <view class="volume">销量：99</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="item">
+            <navigator url="/pages/product_view/index">
+                <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p3.jpg"></image>
+                <view class="pr-intro">
+                    <view class="name lineText2">小吃</view>
+                    <view class="con">
+                        <view class="price">￥
+                            <text class="num">22.00</text>
+                        </view>
+                        <view class="volume">销量：99</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="item">
+            <navigator url="/pages/product_view/index">
+                <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p4.jpg"></image>
+                <view class="pr-intro">
+                    <view class="name lineText2">甜品</view>
+                    <view class="con">
+                        <view class="price">￥
+                            <text class="num">22.00</text>
+                        </view>
+                        <view class="volume">销量：99</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="item">
+            <navigator url="/pages/product_view/index">
+                <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p5.jpg"></image>
+                <view class="pr-intro">
+                    <view class="name lineText2">早餐</view>
+                    <view class="con">
+                        <view class="price">￥
+                            <text class="num">22.00</text>
+                        </view>
+                        <view class="volume">销量：99</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="item">
+            <navigator url="/pages/product_view/index">
+                <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p6.jpg"></image>
+                <view class="pr-intro">
+                    <view class="name lineText2">快餐</view>
+                    <view class="con">
+                        <view class="price">￥
+                            <text class="num">22.00</text>
+                        </view>
+                        <view class="volume">销量：99</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <view class="tips-foot tc grey">不要扯了，已经扯到底了</view>
+</view>

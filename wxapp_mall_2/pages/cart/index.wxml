@@ -1,0 +1,53 @@
+<block wx:if="{{hasList}}">
+    <view class="mallcart">
+        <view class="cart-content">
+            <view class="cart-item flex" wx:for="{{carts}}">
+                <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" bindtap="selectList" />
+                <icon wx:else type="circle" data-index="{{index}}" bindtap="selectList" />
+                <navigator url="/pages/product_view/index" hover-class="none">
+                    <image src="{{item.image}}" class="cart-img ml10 mr10"></image>
+                </navigator>
+                <view class="cart-info sub">
+                    <text class="cart-title lineText2 mb5">{{item.title}}</text>
+                    <view class="price red">￥{{item.price}}</view>
+                    <view class="control">
+                        <view class="count-set tc flex">
+                            <view class="sub" bindtap="minusCount" data-index="{{index}}">
+                                <text class="iconfont icon-reduce-n"></text>
+                            </view>
+                            <view class="sub"><input type="number" value="{{item.num}}" class="buy-couts" disabled="true" /></view>
+                            <view class="sub" bindtap="addCount" data-index="{{index}}">
+                                <text class="iconfont icon-add-n"></text>
+                            </view>
+                        </view>
+                        <view class="mallcart-del grey f18" bindtap="deleteList" data-index="{{index}}">
+                            <text class="iconfont icon-31shanchu"></text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--底部浮动 start-->
+    <view class="mallcart-foot flex">
+        <view class="sel-wrap" bindtap="selectAll">
+            <icon wx:if="{{selectAllStatus}}" type="success" color="red"  />
+            <icon wx:else type="circle" />
+            <view class="sub ml10">全选</view>
+        </view>
+        <view class="mall-cart-sum sub tr">
+            <view>合计：
+                <text class="red f16">￥{{totalPrice}}</text>
+            </view>
+            <text class="f12 grey">(共{{totalNum}}件商品)</text>
+        </view>
+        <button class="mall-cart-btn ml10" disabled="" bindtap="mallsure">结算</button>
+    </view>
+    <!--底部浮动 end-->
+</block>
+<block wx:else>
+    <view class="no-product tc">
+        <text class="no-content-icon iconfont icon-wuneirong"></text>
+        <view class="no-content-font">购物车空空如也</view>
+    </view>
+</block>

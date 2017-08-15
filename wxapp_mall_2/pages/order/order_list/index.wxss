@@ -1,0 +1,3 @@
+.order-tab{ margin-top: 20rpx; }
+.ord-item button{ line-height: 60rpx; padding: 0 24rpx; }
+.order-list{ margin-bottom: 20rpx;}

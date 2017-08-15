@@ -1,0 +1,476 @@
+<view class="container">
+  <view class="search-wrap">
+    <view class="search-box tc" bindtap="toSearch">
+      <text class="iconfont icon-sousuo"></text>
+      <text class="txt">搜索商品</text>
+    </view>
+  </view>
+
+  <swiper class="swiper-wrap" indicator-dots autoplay indicator-active-color="{{colorValue}}">
+    <block wx:for="{{slider}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="menu-wrap">
+    <view class="menu-item tc">
+      <navigator url="/pages/product_list/index">
+        <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/c1.jpg" class="menu-item-img"></image>
+        <view class="menu-tx lineText">精优选</view>
+      </navigator>
+    </view>
+    <view class="menu-item tc">
+      <navigator url="/pages/product_list/index">
+        <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/c2.jpg" class="menu-item-img"></image>
+        <view class="menu-tx lineText">名牌场</view>
+      </navigator>
+    </view>
+    <view class="menu-item tc">
+      <navigator url="/pages/product_list/index">
+        <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/c3.jpg" class="menu-item-img"></image>
+        <view class="menu-tx lineText">时尚美</view>
+      </navigator>
+    </view>
+    <view class="menu-item tc">
+      <navigator url="/pages/product_list/index">
+        <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/c4.jpg" class="menu-item-img"></image>
+        <view class="menu-tx lineText">限时购</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="recommend-wrap">
+    <view class="m-header">
+      <text class="iconfont icon-jingxuanshichang"></text>
+      <text class="title">潮流穿搭</text>
+    </view>
+    <scroll-view scroll-x class="recommend-main">
+      <view class="item">
+        <navigator url="/pages/product_view/index">
+          <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+          <view class="pr-intro">
+            <view class="name tc lineText">入夏套装新品</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/product_view/index">
+          <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p2.jpg"></image>
+          <view class="pr-intro">
+            <view class="name tc lineText">网红新品搭</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/product_view/index">
+          <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p3.jpg"></image>
+          <view class="pr-intro">
+            <view class="name tc lineText">仙女穿搭术</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/product_view/index">
+          <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+          <view class="pr-intro">
+            <view class="name tc lineText">入夏套装新品</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/product_view/index">
+          <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p2.jpg"></image>
+          <view class="pr-intro">
+            <view class="name tc lineText">网红新品搭</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/product_view/index">
+          <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p3.jpg"></image>
+          <view class="pr-intro">
+            <view class="name tc lineText">仙女穿搭术</view>
+          </view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="hot-wrap">
+    <view class="m-header">
+      <text class="iconfont icon-nvzhuangneiyi"></text>
+      <text class="title">精优选</text>
+    </view>
+    <view class="common-classify">
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">连衣裙</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p4.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">少女装</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p5.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">小清新</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p6.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">时尚美</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="hot-wrap">
+    <view class="m-header">
+      <text class="iconfont icon-nvzhuangneiyi"></text>
+      <text class="title">名牌场</text>
+    </view>
+    <view class="common-classify">
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">连衣裙</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p4.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">少女装</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p5.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">小清新</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p6.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">时尚美</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="hot-wrap">
+    <view class="m-header">
+      <text class="iconfont icon-nvzhuangneiyi"></text>
+      <text class="title">时尚美</text>
+    </view>
+    <view class="common-classify">
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">连衣裙</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p4.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">少女装</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p5.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">小清新</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p6.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">时尚美</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="hot-wrap">
+    <view class="m-header">
+      <text class="iconfont icon-nvzhuangneiyi"></text>
+      <text class="title">限时购</text>
+    </view>
+    <view class="common-classify">
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p1.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">连衣裙</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p4.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">少女装</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p5.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">小清新</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="c-item">
+        <navigator url="/pages/product_view/index">
+          <view class="con">
+            <view class="img-wrap">
+              <image mode="widthFix" src="http://95fa85.2.magic2008.cn/ufile/38013/redon/p6.jpg"></image>
+            </view>
+            <view class="intro-wrap">
+              <view class="title lineText2">时尚美</view>
+              <view class="detail-wrap">
+                <view class="intro">
+                  <text class="price">￥51.00</text>
+                  <text class="num">销量：2</text>
+                </view>
+                <view class="buy-icon">
+                  <text class="iconfont icon-31gouwuche"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="particular-wrap">
+    <image src="http://95fa85.2.magic2008.cn/ufile/38013/redon/gd.jpg" mode="widthFix"></image>
+  </view>
+</view>

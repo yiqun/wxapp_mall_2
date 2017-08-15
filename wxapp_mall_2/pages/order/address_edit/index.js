@@ -10,9 +10,6 @@ Page({
     areas: [],
     addressInfo: {}
   },
-  onReady: function (options) {
-
-  },
   onLoad: function (options) {
     let id = address.provinces[0].id;
     let that = this;

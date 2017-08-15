@@ -11,7 +11,14 @@ Page({
     toBottom: false
   },
   onLoad: function (options) {
+    var that = this;
+    wx.login({
+      success: function (res) {
+        if (res.code) {
 
+        }
+      }
+    })
   },
   toSearch: function () {
     wx.navigateTo({
